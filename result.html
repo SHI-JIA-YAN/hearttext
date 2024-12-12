@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/gift.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="menu">
+      <h1>
+        <a href="home.html"></a>
+      </h1>
+      <ul>
+        <li><a href="#">讀嘉診療所</a></li>
+        <li><a href="vlog.html">嘉一點vlog</a></li>
+
+        <li><a href="article.html">讀嘉記義</a></li>
+        <li><a href="about.html">1+1=4</a></li>
+      </ul>
+      <!-- 漢堡按鈕 -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </nav>
+    <form id="quizForm">
+      <!-- 心理測驗首頁 -->
+      <div class="main-page" id="loadingPage" style="text-align:center">
+
+        <p>
+          你太幸運了！！恭喜獲得...
+        </p>
+
+        <!-- 儲存圖片區 -->
+        <div style="display: flex;justify-content: center;align-items: center;flex-direction: column">
+          <!-- 暫時的結果顯示區 -->
+          <div style="background: cornsilk;width: 400px; height:400px; margin-bottom:20px;">
+            <div id="resultImage" style="background: cornsilk; width: 400px; height: 400px; margin-bottom: 20px;"></div>
+          </div>
+        </div>
+        <button type="button" class="resultButton"
+          onclick="downloadSpecificImage(); jumpToNextPage('finalresult.html', 0)">
+          儲存 並 領取你的專屬結果圖
+        </button>
+
+      </div>
+
+  </div>
+  </form>
+  </div>
+
+  <script src="js/result.js" defer></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
