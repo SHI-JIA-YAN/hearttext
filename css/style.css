@@ -147,18 +147,6 @@ header {
   float: left;
 }
 
-.menu h1 a {
-  display: block;
-  background-image: url(https://images2.imgbox.com/96/0c/G1gO1j7e_o.png);
-  width: 229px;
-  height: 88px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 /*
 .menu ul li {
     float: right;
