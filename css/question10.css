@@ -313,7 +313,176 @@ header {
   }
 
 }
+.menu.scrolled {
+  background-color: rgba(254, 152, 88, 0.8); /* 变成更透明 */
+  backdrop-filter: blur(10px); /* 添加模糊效果 */
+}
 
+
+
+.menu h1{
+ float:left;
+}
+
+
+.menu h1 a img {
+    width: 160px;
+    height: 30px; /* 等比例缩放 */
+    background:cover;
+
+   
+}
+/*
+.menu ul li {
+    float: right;
+}
+*/
+.menu ul li a {
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+
+    width: 130px;
+    height: 40px;
+    line-height: 29px;
+
+    margin: 16px 13px 16px 5px;
+    padding: 4px 0px;
+    color: #8C6C57;
+    background-color: #FFF;
+
+    text-decoration: none;
+   
+
+    border: 5px solid transparent; /* 初始狀態下邊框透明 */
+    transition: border 0.3s ease; /* 增加邊框過渡效果 */
+}
+/*
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+*/
+.menu ul li a:hover {
+    border: 5px solid #7B5F49; /* 設置咖啡色邊框 */
+   
+}
+.menu {
+    background-color: #FE9858;
+    padding: 0px 5px 0px 16px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.menu ul li {
+    margin-left: 3px;
+}
+
+.icon {
+    display: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+@media (max-width: 900px) {
+    .menu ul {
+  /*
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        background-color: #fff;
+        width: 200px;
+        text-align: right;
+  height:100vh;
+  */
+  width: 200px;
+        height: calc(100vh - 88px); /* 使菜单栏占据导航栏下方的整个网页高度 */
+        position: fixed;
+        right: 0;
+        top: 88px; /* 从导航栏底部开始 */
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* 从上方开始显示菜单项 */
+        display: none;
+        z-index: 10;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul {
+  /*
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 90px;
+        background-color: #fff;
+        width: 200px;
+        text-align: right;
+  height:100vh;
+  */
+  width: 100%;
+        height: calc(100vh - 88px); /* 使菜单栏占据导航栏下方的整个网页高度 */
+        position: fixed;
+        right: 0;
+        top: 88px; /* 从导航栏底部开始 */
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* 从上方开始显示菜单项 */
+        display: none;
+        z-index: 10;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .icon {
+        display: block;
+    }
+    .menu{
+        height:40px;
+    }
+
+}
 
 
 /*新的*/
