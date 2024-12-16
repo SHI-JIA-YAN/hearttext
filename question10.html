@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
 <head>
-  <meta charset="UTF-8">
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <link rel="stylesheet" href="css/question10.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>article</title>
   <style>
     .question {
@@ -14,15 +14,22 @@
     }
 
     .active {
-      display: block;
+      display: flex;
       /* 只顯示當前問題 */
     }
   </style>
+  <script>
+    // 在頁面加載時重設 currentQuestion
+    window.onload = function () {
+      localStorage.setItem("currentQuestion", 0); // 重設 currentQuestion 為 0
+      console.log("Current question reset to 0");
+    };
+  </script>
 </head>
 
 <body>
-  <div class="container">
-     <nav class="menu">
+  <div id="container" class="container container-background">
+ <nav class="menu">
                     
                 <h1>
                     <a href="https://eudoraaaaa.github.io/Chayi1125/index.html">
@@ -31,16 +38,16 @@
                 </h1>  
                         
                 <span class="icon" onclick="toggleMenu()">☰</span>     
-               <ul id="menu-links">
-                  <li><a href="https://shi-jia-yan.github.io/hearttext/hearttext.html">讀嘉診療所</a></li>
-                  <li><a href="https://eudoraaaaa.github.io/Chayi1125/vlog.html">嘉一點vlog</a></li>
+               <ul>
+        <li><a href="https://shi-jia-yan.github.io/hearttext/hearttext.html">讀嘉診療所</a></li>
+        <li><a href="https://eudoraaaaa.github.io/Chayi1125/vlog.html">嘉一點vlog</a></li>
 
-                  <li><a href="https://eudoraaaaa.github.io/Chayi1125/article.html">讀嘉記義</a></li>
-                  <li><a href="https://eudoraaaaa.github.io/Chayi1125/about.html">1+1=4</a></li>
+        <li><a href="https://eudoraaaaa.github.io/Chayi1125/article.html">讀嘉記義</a></li>
+        <li><a href="https://eudoraaaaa.github.io/Chayi1125/about.html">1+1=4</a></li>
 
-              </ul> 
+      </ul> 
                
-  </nav>    
+  </nav>     
     <div class="container2">
 
 
