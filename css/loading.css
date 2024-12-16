@@ -39,9 +39,17 @@ article {
   overflow-x: hidden;
 
   bottom: 0px;
-  /* 尝试移除这个bottom属性 */
+  /* 嘗试移除这个bottom属性 */
   min-height: 100vh;
   padding-top: 88px;
+}
+
+.container-background {
+  background-image: url(../images/cover.png);
+  background-size: 110%;
+  background-color: #fde4d0;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -60,9 +68,6 @@ header {
   position: fixed;
   top: 0px;
   z-index: 20;
-
-
-
 }
 
 .menu.scrolled {
@@ -78,17 +83,6 @@ header {
   float: left;
 }
 
-.menu h1 a {
-  display: block;
-  background-image: url(https://images2.imgbox.com/96/0c/G1gO1j7e_o.png);
-  width: 229px;
-  height: 88px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-}
 
 .menu ul li {
   float: right;
@@ -153,23 +147,11 @@ header {
   float: left;
 }
 
-.menu h1 a {
-  display: block;
-  background-image: url(https://images2.imgbox.com/96/0c/G1gO1j7e_o.png);
-  width: 229px;
-  height: 88px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 /*
-  .menu ul li {
-      float: right;
-  }
-  */
+.menu ul li {
+    float: right;
+}
+*/
 .menu ul li a {
   font-size: 20px;
   display: block;
@@ -194,14 +176,14 @@ header {
 }
 
 /*
-  .menu ul {
-      display: flex;
-      justify-content: flex-end;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-  }
-  */
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+*/
 .menu ul li a:hover {
   border: 5px solid #7B5F49;
   /* 設置咖啡色邊框 */
@@ -243,16 +225,16 @@ header {
 @media (max-width: 900px) {
   .menu ul {
     /*
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          right: 0;
-          top: 90px;
-          background-color: #fff;
-          width: 200px;
-          text-align: right;
-    height:100vh;
-    */
+              display: none;
+              flex-direction: column;
+              position: absolute;
+              right: 0;
+              top: 90px;
+              background-color: #fff;
+              width: 200px;
+              text-align: right;
+        height:100vh;
+        */
     width: 200px;
     height: calc(100vh - 88px);
     /* 使菜单栏占据导航栏下方的整个网页高度 */
@@ -285,16 +267,16 @@ header {
 @media (max-width: 480px) {
   .menu ul {
     /*
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          right: 0;
-          top: 90px;
-          background-color: #fff;
-          width: 200px;
-          text-align: right;
-    height:100vh;
-    */
+              display: none;
+              flex-direction: column;
+              position: absolute;
+              right: 0;
+              top: 90px;
+              background-color: #fff;
+              width: 200px;
+              text-align: right;
+        height:100vh;
+        */
     width: 100%;
     height: calc(100vh - 88px);
     /* 使菜单栏占据导航栏下方的整个网页高度 */
