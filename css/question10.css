@@ -425,6 +425,7 @@ header {
 
     .icon {
         display: block;
+        padding:7px 5% 0 40%;
     }
 }
 
