@@ -303,6 +303,7 @@ header {
 
   .icon {
     display: block;
+    padding:10px 5% 0 40%;
   }
 
 }
