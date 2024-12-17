@@ -471,6 +471,7 @@ header {
 
     .icon {
         display: block;
+        padding:10px 5% 0 40%;
     }
     .menu{
         height:40px;
