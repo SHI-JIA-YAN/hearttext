@@ -465,6 +465,7 @@ header {
 
     .icon {
         display: block;
+       padding:7px 5% 0 40%;
     }
     .menu{
         height:40px;
