@@ -854,7 +854,11 @@ p {
 /* 彈出框內影片區內容 */
 .video-content-inner {
   background: cornsilk;
- 
+}
+
+.video-content-inner iframe{
+    width: 672px;
+    height: 245px;
 }
 
 /* 彈出框內文字區容器 */
@@ -986,20 +990,26 @@ p {
 
   .text-content-inner {
     background: cornsilk;
-    height:200px;
+    height:280px;
   }
 
   .text-content p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+      height: 700px
   }
 
   .modal-content-inner {
     flex-direction: column;
   }
+
+    .video-content-inner iframe{
+        width: 267px;
+        height: 200px;
+    }
 }
