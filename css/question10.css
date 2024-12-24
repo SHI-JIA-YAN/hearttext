@@ -480,7 +480,7 @@ header {
 .location-img {
   position: relative;
   /* 設定位置相對性 */
-  width: 75%;
+  width:100%;
   /* 寬度佔滿 */
   display: flex;
   /* 彈性佈局，方便居中 */
@@ -488,9 +488,10 @@ header {
   /* 內容置中 */
   margin-top: 20px;
   /* 頂部留白 */
-  margin-right: 20%;
+  margin-left: 10px;
+  margin-right: 0;
   /* 頂部留白 */
-  max-width: 400px;
+  max-width: 500px;
   /* 最大寬度 */
   height: auto;
   /* 高度自適應 */
@@ -542,14 +543,26 @@ header {
   /* 水平置中 */
 }
 
-h3#teacher1,
 h3#teacher2 {
+  
   font-size: 25px;
-  margin: 0;
+  margin: 0 120px;
   /* 移除默認的 margin */
   padding-bottom: 10px;
   /* 添加底部留白 */
-  text-align: center;
+  text-align: left;
+  /* 文字水平居中對齊 */
+  width: 100%;
+  /* 保證標題在各自區塊內居中 */
+}
+h3#teacher1{
+
+  font-size: 25px;
+  margin: 0 0 0 170px;
+  /* 移除默認的 margin */
+  padding-bottom: 10px;
+  /* 添加底部留白 */
+  text-align: left;
   /* 文字水平居中對齊 */
   width: 100%;
   /* 保證標題在各自區塊內居中 */
@@ -650,6 +663,20 @@ p {
 
 /* 手機和平板響應式設計 */
 @media screen and (max-width: 768px) {
+   h3#teacher2 {
+  
+    margin: 0 ;
+    text-align: center;
+    /* 文字水平居中對齊 */
+    
+  }
+  h3#teacher1{
+  
+    margin: 0 ;
+    text-align: center;
+    /* 文字水平居中對齊 */
+   
+  }
   body {
     padding: 10px;
     font-size: 2vw;
@@ -703,6 +730,20 @@ p {
 
 /* 更小的手機螢幕 */
 @media (max-width: 599px) {
+   h3#teacher2 {
+  
+    margin: 0 ;
+    text-align: center;
+    /* 文字水平居中對齊 */
+    
+  }
+  h3#teacher1{
+  
+    margin: 0 ;
+    text-align: center;
+    /* 文字水平居中對齊 */
+   
+  }
   .main-page h1 {
     font-size: 1.8em;
   }
