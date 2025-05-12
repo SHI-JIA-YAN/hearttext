@@ -542,9 +542,7 @@ header {
   align-items: center;
   /* 水平置中 */
 }
-.text-content-inner{
-  padding:30px;
-}
+
 h3#teacher2 {
   
   font-size: 25px;
@@ -916,6 +914,7 @@ p {
 .text-content-inner {
   background: cornsilk;
   left: 10px;
+  padding:30px;
 }
 
 /* 最後結果彈出框的確定按鈕 */
