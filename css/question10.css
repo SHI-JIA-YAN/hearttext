@@ -618,6 +618,7 @@ label {
   /* 字體大小 */
   margin: 0 auto;
   margin-right: 10px;
+  text-align: left;
 }
 
 /* 滑鼠移上去時選項的變化 */
