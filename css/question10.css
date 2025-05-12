@@ -529,7 +529,7 @@ header {
   /* 減少左邊距離 */
   color:#894B3D;
   font-family: Oswald;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -542,7 +542,9 @@ header {
   align-items: center;
   /* 水平置中 */
 }
-
+.text-content-inner{
+  padding:30px;
+}
 h3#teacher2 {
   
   font-size: 25px;
@@ -900,7 +902,7 @@ p {
 
 .video-content-inner iframe{
     width: 672px;
-    height: 245px;
+    height: 315px;
 }
 
 /* 彈出框內文字區容器 */
